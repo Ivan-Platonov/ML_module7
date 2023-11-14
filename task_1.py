@@ -8,11 +8,11 @@ count = 0
 def error_message():
   print('Необходимо ввести положительное число, не равное нулю!!!')
   
-for i in range(10):
+for element in range(10):
   number = ''
   while number == '':
     try:
-      number = int(input(f'Введите {i + 1}-е число: '))
+      number = int(input(f'Введите {element + 1}-е число: '))
       if number == 0:
         error_message()
         number = ''

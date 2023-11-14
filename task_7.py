@@ -36,10 +36,10 @@ while cards_quantity == '':
   except ValueError:
     error_message()
 
-for i in range(cards_quantity + 1):
-  cards_number_summ += i
+for card in range(cards_quantity + 1):
+  cards_number_summ += card
 
-for i in range(cards_quantity - 1):
+for card in range(cards_quantity - 1):
   card_number = ''
   while card_number == '':
     try:

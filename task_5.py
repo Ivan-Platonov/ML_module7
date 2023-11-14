@@ -27,9 +27,9 @@ while stop == '':
 if start > stop:
   start, stop = stop, start
 
-for i in range(start, stop + 1):
-  if i % 3 == 0:
-    summ += i
+for element in range(start, stop + 1):
+  if element % 3 == 0:
+    summ += element
     count += 1
 
 summ = round(summ / count, 2)

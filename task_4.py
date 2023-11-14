@@ -23,11 +23,11 @@ while student_count == '':
   except ValueError:
     error_message()
 
-for i in range(student_count):
+for student in range(student_count):
   mark = ''
   while mark == '':
     try:
-      mark = int(input(f'Введите оценку ученика {i + 1}: '))
+      mark = int(input(f'Введите оценку ученика {student + 1}: '))
       if mark != 3 and mark != 4 and mark != 5:
         print('Оценка сегодня может быть 3, 4 или 5')
         mark = ''

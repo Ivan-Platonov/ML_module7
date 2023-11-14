@@ -8,11 +8,11 @@ print('Задача 2. Посчитай чужую зарплату...')
 # и выводит на экран среднюю зарплату за год.
 
 salary_summ = 0
-for i in range(12):
+for month in range(12):
   salary = ''
   while salary == '':
     try:
-      salary = float(input(f'Введите свою зарплату за {i + 1}-й месяц: '))
+      salary = float(input(f'Введите свою зарплату за {month + 1}-й месяц: '))
     except ValueError:
       print('Необходимо ввести положительное число!!!')
   salary_summ += round(salary/12, 2)
